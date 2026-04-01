@@ -17,6 +17,12 @@ import cn.ivfzhou.ssm.exception.SsmException;
 import cn.ivfzhou.ssm.mybatis.mapper.ItemMapper;
 import cn.ivfzhou.ssm.service.ItemService;
 
+/**
+ * 商品 Service 实现类。
+ * <p>使用 PageHelper 实现分页查询，使用 tk.mybatis 的 Example 实现条件查询。</p>
+ *
+ * @author ivfzhou
+ */
 @Service
 @Slf4j
 public class ItemServiceImpl implements ItemService {

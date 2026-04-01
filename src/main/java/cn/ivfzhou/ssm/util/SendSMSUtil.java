@@ -12,6 +12,13 @@ import java.util.Map;
 import cn.ivfzhou.ssm.constant.SsmConstant;
 import cn.ivfzhou.ssm.vo.ResultVO;
 
+/**
+ * 短信发送工具类。
+ * <p>基于云片网 SDK 发送短信验证码，验证码生成后存入 Session 中供注册时校验。
+ * API Key 通过 {@code env.properties} 配置注入。</p>
+ *
+ * @author ivfzhou
+ */
 @Component
 public class SendSMSUtil {
 

@@ -23,6 +23,12 @@ import cn.ivfzhou.ssm.constant.SsmConstant;
 import cn.ivfzhou.ssm.util.SendSMSUtil;
 import cn.ivfzhou.ssm.vo.ResultVO;
 
+/**
+ * 用户管理控制器。
+ * <p>提供用户注册（含短信验证码校验）、登录（基于Shiro认证）、用户名唯一性校验等功能。</p>
+ *
+ * @author ivfzhou
+ */
 @Controller
 @RequestMapping("/user")
 @Slf4j

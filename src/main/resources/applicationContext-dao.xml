@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Spring DAO 层配置文件（父容器）。
+    配置内容：数据源（Druid）、SqlSessionFactory（MyBatis集成）、Mapper 接口扫描。
+-->
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns="http://www.springframework.org/schema/beans"

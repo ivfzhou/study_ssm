@@ -28,6 +28,12 @@ import cn.ivfzhou.ssm.exception.SsmException;
 import cn.ivfzhou.ssm.service.ItemService;
 import cn.ivfzhou.ssm.vo.ResultVO;
 
+/**
+ * 商品管理控制器。
+ * <p>提供商品的列表查询（分页）、添加（含文件上传）、删除等功能。</p>
+ *
+ * @author ivfzhou
+ */
 @Controller
 @RequestMapping("/item")
 @Slf4j

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    SpringMVC 配置文件（子容器）。
+    加载范围：Controller、Handler、Util、Interceptor 层组件。
+    注意：此文件由 DispatcherServlet 加载，与 applicationContext-*.xml（父容器）构成父子容器关系。
+-->
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"

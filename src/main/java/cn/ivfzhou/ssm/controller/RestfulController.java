@@ -4,6 +4,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * RESTful 风格接口演示控制器。
+ * <p>展示 SpringMVC 对 RESTful 风格请求的支持，包括 @PathVariable、@PutMapping、ResponseEntity 等用法。</p>
+ *
+ * @author ivfzhou
+ */
 @RestController // == @Controller + @ResponseBody
 @RequestMapping("/rest")
 public class RestfulController {

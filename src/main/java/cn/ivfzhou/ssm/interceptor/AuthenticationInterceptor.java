@@ -11,10 +11,25 @@ import javax.servlet.http.HttpSession;
 import cn.ivfzhou.ssm.constant.SsmConstant;
 import cn.ivfzhou.ssm.entity.User;
 
-// 认证拦截器
+/**
+ * 基于Session的认证拦截器（已被Shiro替代，当前未启用）。
+ * <p>通过检查Session中是否存在用户信息来判断用户是否已登录，
+ * 未登录则重定向到登录页面。该拦截器已在 springmvc.xml 中注释。</p>
+ *
+ * @author ivfzhou
+ * @see cn.ivfzhou.ssm.realm.CustomRealm
+ */
 @Component
 public class AuthenticationInterceptor implements HandlerInterceptor {
 
+    /**
+     * 在请求处理之前执行，检查用户登录状态。
+     *
+     * @param request  当前HTTP请求
+     * @param response 当前HTTP响应
+     * @param handler  处理器对象
+     * @return true表示放行，false表示拦截
+     */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println("处理1");

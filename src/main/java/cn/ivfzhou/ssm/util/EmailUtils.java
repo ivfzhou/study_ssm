@@ -10,6 +10,13 @@ import java.util.Properties;
 
 import cn.ivfzhou.ssm.entity.User;
 
+/**
+ * 邮件发送工具类。
+ * <p>基于 javax.mail API，通过 126 邮箱 SMTP 服务器发送 HTML 格式的生日祝福邮件。
+ * 当前发送方和授权码硬编码在实现中，生产环境建议配置化。</p>
+ *
+ * @author ivfzhou
+ */
 public class EmailUtils {
 
 

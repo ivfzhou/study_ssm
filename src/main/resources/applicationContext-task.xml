@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Quartz 定时任务配置文件（父容器）。
+    配置内容：定时扫描 task 包下的组件、定义生日祝福邮件发送任务。
+    Cron 表达式 "0 53 * * * ?" 表示每小时第53分钟执行一次。
+-->
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns="http://www.springframework.org/schema/beans"

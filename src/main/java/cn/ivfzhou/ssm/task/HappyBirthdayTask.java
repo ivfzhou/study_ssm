@@ -9,6 +9,14 @@ import cn.ivfzhou.ssm.entity.User;
 import cn.ivfzhou.ssm.service.UserService;
 import cn.ivfzhou.ssm.util.EmailUtils;
 
+/**
+ * 生日祝福定时任务。
+ * <p>使用 Quartz 定时执行，每小时53分触发一次（Cron: {@code 0 53 * * * ?}），
+ * 查询当天过生日的用户并发送生日祝福邮件。</p>
+ *
+ * @author ivfzhou
+ * @see cn.ivfzhou.ssm.util.EmailUtils
+ */
 @Component
 public class HappyBirthdayTask {
 

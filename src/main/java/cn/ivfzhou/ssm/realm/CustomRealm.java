@@ -14,6 +14,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import cn.ivfzhou.ssm.entity.User;
 import cn.ivfzhou.ssm.service.UserService;
 
+/**
+ * 自定义 Shiro Realm。
+ * <p>继承 {@link AuthorizingRealm}，实现认证（Authentication）和授权（Authorization）逻辑。
+ * 密码匹配方式为 MD5 哈希 + 随机盐值 + 1024 次迭代，与注册时 {@link cn.ivfzhou.ssm.service.impl.UserServiceImpl} 的加密方式一致。</p>
+ *
+ * @author ivfzhou
+ * @see cn.ivfzhou.ssm.service.UserService#findByUsername(String)
+ */
 public class CustomRealm extends AuthorizingRealm {
 
     @Autowired

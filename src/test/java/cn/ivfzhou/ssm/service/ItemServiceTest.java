@@ -11,6 +11,13 @@ import java.util.Date;
 import cn.ivfzhou.ssm.SpringTests;
 import cn.ivfzhou.ssm.entity.Item;
 
+/**
+ * ItemService 业务层测试类。
+ * <p>测试商品的分页查询和添加功能。save 方法使用 {@linkTransactional} 注解
+ * 以确保测试数据不会真正提交到数据库。</p>
+ *
+ * @author ivfzhou
+ */
 public class ItemServiceTest extends SpringTests {
 
     @Autowired

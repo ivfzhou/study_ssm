@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Apache Shiro 安全框架配置文件（父容器）。
+    配置内容：自定义 Realm、安全管理器（SecurityManager）、Shiro 过滤器链。
+    过滤器链通过 FilterChainDefinitionMapFactory 从数据库动态加载。
+-->
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    SSM（Spring + SpringMVC + MyBatis）商品管理系统 Maven 项目配置。
+    基础框架：Spring 5.3.22, MyBatis 3.5.10, MySQL 8.0, JDK 8+
+    安全框架：Apache Shiro 1.9.1
+    连接池：Druid 1.2.11
+    构建插件：tomcat7-maven-plugin（端口8080，上下文路径 /ssm）
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">

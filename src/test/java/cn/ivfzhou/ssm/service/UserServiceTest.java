@@ -8,6 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.Assert.assertNotNull;
 
+/**
+ * UserService 业务层测试类（已标记 @Ignore，暂不执行）。
+ * <p>测试用户注册、登录、用户名校验和按用户名查询功能。</p>
+ *
+ * @author ivfzhou
+ */
 @Ignore
 public class UserServiceTest extends SpringTests {
 

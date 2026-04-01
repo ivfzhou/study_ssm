@@ -2,6 +2,14 @@ package cn.ivfzhou.ssm.enums;
 
 import lombok.Getter;
 
+/**
+ * 异常信息枚举。
+ * <p>定义系统中所有业务异常的错误码和错误消息，供 {@link cn.ivfzhou.ssm.exception.SsmException} 使用。
+ * 错码分段：1-参数类, 5-验证码类, 31-33-用户类, 61-62-商品类, 81-83-图片类。</p>
+ *
+ * @author ivfzhou
+ * @see cn.ivfzhou.ssm.exception.SsmException
+ */
 @Getter
 public enum ExceptionInfoEnum {
     PARAM_ERROR(1, "参数不合法!!"),

@@ -11,6 +11,13 @@ import java.util.List;
 import cn.ivfzhou.ssm.SpringTests;
 import cn.ivfzhou.ssm.entity.User;
 
+/**
+ * UserMapper 接口测试类。
+ * <p>演示 tk.mybatis 通用 Mapper 的各种 CRUD 操作，包括：
+ * 全量查询、条件查询、分页查询、Example 条件构造、插入（全量/选择）、更新、删除等。</p>
+ *
+ * @author ivfzhou
+ */
 public class UserMapperTest extends SpringTests {
 
     @Autowired

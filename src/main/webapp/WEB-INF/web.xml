@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Web 应用部署描述符（web.xml）。
+    配置内容：
+    1. Spring 父容器初始化（ContextLoaderListener + applicationContext-*.xml）
+    2. 字符编码过滤器（CharacterEncodingFilter，解决 POST 请求中文乱码）
+    3. Shiro 安全过滤器（DelegatingFilterProxy，代理到 Spring 容器中的 shiroFilter）
+    4. RESTful 风格支持（HiddenHttpMethodFilter，将 _method 参数转换为 PUT/DELETE/PATCH）
+    5. Druid 数据源监控页面（StatViewServlet，访问路径 /druid/*）
+    6. 静态资源放行（交由 Tomcat 默认 Servlet 处理）
+    7. SpringMVC 前端控制器（DispatcherServlet，拦截所有请求 /）
+-->
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"

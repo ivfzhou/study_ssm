@@ -17,6 +17,13 @@ import cn.ivfzhou.ssm.exception.SsmException;
 import cn.ivfzhou.ssm.mybatis.mapper.UserMapper;
 import cn.ivfzhou.ssm.service.UserService;
 
+/**
+ * 用户 Service 实现类。
+ * <p>使用 Shiro 的 {@link Md5Hash} 进行密码加密（MD5 + 盐值 + 1024次迭代），
+ * 提供 Shiro 认证所需的用户查询、过滤器链动态加载和生日查询等功能。</p>
+ *
+ * @author ivfzhou
+ */
 @Service
 @Slf4j
 public class UserServiceImpl implements UserService {
